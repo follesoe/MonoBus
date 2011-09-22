@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MonoBus", "MonoBus\MonoBus.csproj", "{8D2FD905-1C0B-4CD4-9A22-F699314632C4}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|iPhoneSimulator = Debug|iPhoneSimulator
+		Release|iPhoneSimulator = Release|iPhoneSimulator
+		Debug|iPhone = Debug|iPhone
+		Release|iPhone = Release|iPhone
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8D2FD905-1C0B-4CD4-9A22-F699314632C4}.Debug|iPhone.ActiveCfg = Debug|iPhone
+		{8D2FD905-1C0B-4CD4-9A22-F699314632C4}.Debug|iPhone.Build.0 = Debug|iPhone
+		{8D2FD905-1C0B-4CD4-9A22-F699314632C4}.Debug|iPhoneSimulator.ActiveCfg = Debug|iPhoneSimulator
+		{8D2FD905-1C0B-4CD4-9A22-F699314632C4}.Debug|iPhoneSimulator.Build.0 = Debug|iPhoneSimulator
+		{8D2FD905-1C0B-4CD4-9A22-F699314632C4}.Release|iPhone.ActiveCfg = Release|iPhone
+		{8D2FD905-1C0B-4CD4-9A22-F699314632C4}.Release|iPhone.Build.0 = Release|iPhone
+		{8D2FD905-1C0B-4CD4-9A22-F699314632C4}.Release|iPhoneSimulator.ActiveCfg = Release|iPhoneSimulator
+		{8D2FD905-1C0B-4CD4-9A22-F699314632C4}.Release|iPhoneSimulator.Build.0 = Release|iPhoneSimulator
+	EndGlobalSection
+	GlobalSection(MonoDevelopProperties) = preSolution
+		StartupItem = MonoBus\MonoBus.csproj
+	EndGlobalSection
+EndGlobal
