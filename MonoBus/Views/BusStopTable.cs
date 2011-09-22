@@ -53,7 +53,7 @@ namespace MonoBus
 				_busBuddy = new BusBuddy();
 				_busBuddy.GetBusStops(response => {
 					_tvc.Response = response;
-					_tvc.TableView.ReloadData();
+					InvokeOnMainThread(() => _tvc.TableView.ReloadData());
 				});
 			}
 			
