@@ -46,7 +46,7 @@ namespace MonoBus
 					_tvc.TableView.ReloadData();
 				}
 				
-				_busBuddy.GetDepartures(_tvc.SelectedBusStop.BusStopId, response => {
+				_busBuddy.GetDepartures(_tvc.SelectedBusStop.LocationId, response => {
 					_tvc.Response = response;
 					InvokeOnMainThread(() => _tvc.TableView.ReloadData());
 				});

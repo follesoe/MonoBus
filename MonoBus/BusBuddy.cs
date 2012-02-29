@@ -10,7 +10,7 @@ namespace MonoBus
 		
 		public BusBuddy()		
 		{
-			_restClient = new RestClient("http://api.busbuddy.norrs.no:8080/api/1.2/");
+			_restClient = new RestClient("http://api.busbuddy.no/api/1.3");
 			_restClient.AddDefaultParameter("apiKey", "HwSJ6xL9wCUnpegC");
 		}
 		
@@ -24,9 +24,9 @@ namespace MonoBus
 			});
 		}
 		
-		public void GetDepartures(int busStopId, Action<DeparturesResponse> callback) 
+		public void GetDepartures(int locationId, Action<DeparturesResponse> callback) 
 		{
-			var request = new RestRequest("departures/" + busStopId);
+			var request = new RestRequest("departures/" + locationId);
 			request.RequestFormat = DataFormat.Json;
 			
 			_restClient.ExecuteAsync<DeparturesResponse>(request, (RestResponse<DeparturesResponse> response) => {
