@@ -19,9 +19,9 @@ namespace MonoBus
 			_window = new UIWindow (UIScreen.MainScreen.Bounds);
 			
 			_busStopTable = new BusStopTable();			
-			_navigationController = new UINavigationController(_busStopTable);			
-			_window.AddSubview(_navigationController.View);			
-			_window.MakeKeyAndVisible ();
+			_navigationController = new UINavigationController(_busStopTable);
+			_window.RootViewController = _navigationController;		
+			_window.MakeKeyAndVisible();
 			return true;
 		}
 	}

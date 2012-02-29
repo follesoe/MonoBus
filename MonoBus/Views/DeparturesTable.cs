@@ -46,10 +46,20 @@ namespace MonoBus
 					_tvc.TableView.ReloadData();
 				}
 				
+				ShowSpinner(true);
+				
 				_busBuddy.GetDepartures(_tvc.SelectedBusStop.LocationId, response => {
 					_tvc.Response = response;
-					InvokeOnMainThread(() => _tvc.TableView.ReloadData());
+					InvokeOnMainThread(() => { 
+						_tvc.TableView.ReloadData();
+						ShowSpinner(false);
+					});
 				});
+			}
+			
+			private void ShowSpinner(bool show)
+			{
+				UIApplication.SharedApplication.NetworkActivityIndicatorVisible = show;
 			}
 
 			public override int RowsInSection (UITableView tableView, int section)
